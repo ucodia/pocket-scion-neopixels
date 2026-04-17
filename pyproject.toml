@@ -1,0 +1,9 @@
+[project]
+name = "pocket-scion-neopixels"
+version = "1.0.0"
+description = "Guide for externalizing the NeoPixel output of the Instruo Pocket Scion to drive an off-board LED strip"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "zensical>=0.0.33",
+]

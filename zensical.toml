@@ -1,0 +1,12 @@
+[project]
+site_name = "Pocket Scion NeoPixels"
+site_url = "https://ucodia.github.io/pocket-scion-neopixels"
+extra_css = ["assets/extra.css"]
+
+[project.theme]
+variant = "classic"
+features = ["navigation.footer"]
+
+[project.theme.palette]
+primary = "custom"
+accent = "custom"
