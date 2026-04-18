@@ -16,6 +16,9 @@ Build the 9-LED chain first, as a standalone piece. You'll connect it to the Sci
 - **Power and ground are parallel**: every LED's V+ connects to one shared rail, every GND to another.
 - **Data is serial**: each LED's DOUT wires to the next LED's DIN. LED #1 receives from the Scion. LED #9's DOUT is unused.
 
+!!! info "LED #1 is reserved for the UI"
+    LED #1 does not react to bioelectric input. The Pocket Scion firmware uses it as a user interface indicator, for example to show the current volume or sensitivity level. Only LEDs #2 through #9 light up in response to bioelectricity.
+
 ## Prep your wire
 
 Cut 22 AWG segments, strip ~3mm off each end:
@@ -41,10 +44,10 @@ After soldering each LED, check your work: no solder bridges, no swapped V+/GND,
 
 Once the chain is complete, solder the three entry wires to LED #1's V+, GND, and DIN legs.
 
+![NeoPixel chain](assets/neopixel-chain.svg)
+
 !!! info "Label your wires"
     If you're using a single wire color, tape labels on each one so you can tell V+, GND, and DATA apart.
-
-![NeoPixel chain](assets/neopixel-chain.svg)
 
 ## Tape off LED #9's DOUT
 
