@@ -1,12 +1,43 @@
 [project]
 site_name = "Pocket Scion NeoPixels"
+site_description = "Guide for externalizing the NeoPixel output of the Instruo Pocket Scion to drive an off-board LED strip."
 site_url = "https://ucodia.github.io/pocket-scion-neopixels"
 extra_css = ["assets/extra.css"]
 
+nav = [
+  { "Home" = "index.md" },
+  { "Overview" = "overview.md" },
+  { "Building the strip" = "building-the-strip.md" },
+  { "Tapping the Scion" = "tapping-the-scion.md" },
+  { "Assembly" = "assembly.md" },
+  { "Troubleshooting" = "troubleshooting.md" },
+]
+
 [project.theme]
 variant = "classic"
-features = ["navigation.footer"]
+features = [
+  "content.code.copy",
+  "navigation.footer",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "toc.follow",
+]
 
 [project.theme.palette]
 primary = "custom"
 accent = "custom"
+
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.toc]
+permalink = true
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true

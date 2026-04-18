@@ -2,3 +2,7 @@
   --md-primary-fg-color: #000000;
   --md-accent-fg-color: #ffc000;
 }
+
+.md-typeset a {
+  text-decoration: underline;
+}
