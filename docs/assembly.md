@@ -35,6 +35,13 @@ Cover every exposed joint with electrical tape or heat shrink. No bare metal any
 
 ![LED strip soldered to USB cable with 1N4001 diode inline on the red wire](assets/diode-inline.jpg)
 
+!!! info "Why a diode?"
+    The Pocket Scion outputs data at 3.3V, but NeoPixels powered from 5V want a data signal of at least 3.5V. Your 3.3V signal is just below spec, which causes flickering and wrong colors.
+
+    A 1N4001 diode drops the NeoPixel supply from 5V to about 4.3V. At that voltage, the NeoPixels only need ~3.0V on the data line, which your 3.3V signal easily satisfies. Cheap, simple, done.
+
+    The more "proper" fix is a level shifter chip (like the 74AHCT125) on the data line, but that's an extra component and extra soldering. For this project the diode is enough.
+
 ## Connect the USB cable to the LED strip
 
 - **Red wire (after the diode)** → strip's **V+** entry wire
