@@ -27,7 +27,7 @@ A beginner-friendly guide to driving an external 9-LED NeoPixel strip from an [I
 1. [Overview](overview.md) — what you're building, parts, tools
 2. [Building the strip](building-the-strip.md) — soldering the 9-LED chain
 3. [Tapping the Scion](tapping-the-scion.md) — exposing and soldering to the data trace
-4. [Assembly](assembly.md) — USB cable, diode, final wiring
+4. [Powering the strip](powering-the-strip.md) — USB cable, diode, final wiring
 5. [Troubleshooting](troubleshooting.md) — common failures and further reading
 
 Estimated build time: 2-3 hours if you are comfortable with a soldering iron.

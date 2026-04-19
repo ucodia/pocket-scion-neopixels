@@ -1,4 +1,4 @@
-# Assembly
+# Powering the strip
 
 Bring the three pieces together: the LED strip, the Scion (DATA already soldered), and a USB-A cable that provides power through an inline diode.
 

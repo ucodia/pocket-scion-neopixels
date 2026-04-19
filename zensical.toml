@@ -9,7 +9,7 @@ nav = [
   { "Overview" = "overview.md" },
   { "Building the strip" = "building-the-strip.md" },
   { "Tapping the Scion" = "tapping-the-scion.md" },
-  { "Assembly" = "assembly.md" },
+  { "Powering the strip" = "powering-the-strip.md" },
   { "Troubleshooting" = "troubleshooting.md" },
 ]
 
